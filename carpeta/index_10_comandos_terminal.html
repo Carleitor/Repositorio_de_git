@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_comandos_terminal</title>
+</head>
+
+<body>
+    <h2 class="wp-block-heading" id="h-los-40-comandos-de-linux-mas-utilizados"><span class="ez-toc-section"
+            id="Los_40_comandos_de_Linux_mas_utilizados"
+            ez-toc-data-id="#Los_40_comandos_de_Linux_mas_utilizados"></span>Los 10 comandos de Linux más
+        utilizados<span class="ez-toc-section-end"></span></h2>
+    <h3 class="wp-block-heading"><span class="ez-toc-section" id="2_Comando_pwd" ez-toc-data-id="#2_Comando_pwd"
+            tabindex="-1"></span>1. Comando pwd<span class="ez-toc-section-end"></span></h3>
+    <p>Utiliza el comando <strong>pwd</strong> para encontrar la ruta de tu directorio de trabajo actual. Simplemente
+        introduciendo <strong>pwd </strong>te devolverá la ruta actual completa, una ruta de todos los directorios que
+        comienza con una barra oblicua (<strong>/</strong>). Por ejemplo, <strong>/inicio/nombredeusuario</strong>.</p>
+    <p>El comando <strong>pwd </strong>utiliza la siguiente sintaxis:</p>
+    <p><strong>pwd [opción]</strong></p>
+    <p>Tiene dos opciones aceptables:</p>
+    <ul>
+        <li><strong>-L </strong>o <strong>-logical </strong>imprime el contenido de las variables de entorno, incluidos
+            los enlaces simbólicos.</li>
+        <li><strong>-P </strong>o <strong>-physical </strong>imprime la ruta real del directorio actual.</li>
+    </ul>
+    <h3 class="wp-block-heading" id="h-3-comando-cd"><span class="ez-toc-section" id="3_Comando_cd"
+            ez-toc-data-id="#3_Comando_cd"></span>2. Comando cd<span class="ez-toc-section-end"></span></h3>
+    <p>Para navegar por los archivos y directorios de Linux, usa el comando <strong>cd</strong>. Te pedirá la ruta
+        completa o el nombre del directorio, dependiendo del directorio de trabajo actual en el que te encuentres.</p>
+    <p>Supongamos que estás en <strong>/home/nombredeusuario/Documentos</strong> y deseas ir a <strong>Fotos</strong>,
+        un subdirectorio de <strong>Documentos</strong>. Para hacerlo, simplemente escribe el siguiente comando:
+    <p>Para navegar por los archivos y directorios de Linux, usa el comando <strong>cd</strong>. Te pedirá la ruta
+        completa o el nombre del directorio, dependiendo del directorio de trabajo actual en el que te encuentres.</p>
+    </p>
+    <p><strong>cd Fotos</strong>.</p>
+    <ul>
+        <li><strong>cd</strong> <strong>~[nombredeusuario]</strong> para ir directamente a la carpeta de inicio.</li>
+        <li><strong>cd ..</strong> para ir un directorio hacia arriba.</li>
+        <li><strong>cd-</strong> para ir al directorio anterior.</li>
+    </ul>
+    <h3 class="wp-block-heading" id="h-4-comando-ls"><span class="ez-toc-section" id="4_Comando_ls"
+            ez-toc-data-id="#4_Comando_ls"></span>3. Comando ls<span class="ez-toc-section-end"></span></h3>
+    <p>El comando<strong> ls</strong> se usa para ver el contenido de un directorio. Por defecto, este comando mostrará
+        el contenido de tu directorio de trabajo actual.</p>
+    <p>Hay variaciones que puedes usar con el comando <strong>ls:</strong></p>
+    <ul>
+        <li><strong>ls -R</strong> también listará todos los archivos en los subdirectorios.</li>
+        <li><strong>ls -a</strong> mostrará los archivos ocultos.</li>
+        <li><strong>ls -al</strong> listará los archivos y directorios con información detallada como los permisos, el
+            tamaño, el propietario, etc.</li>
+    </ul>
+    <h3 class="wp-block-heading" id="h-5-comando-cat"><span class="ez-toc-section" id="5_Comando_cat"
+            ez-toc-data-id="#5_Comando_cat"></span>4. Comando cat<span class="ez-toc-section-end"></span></h3>
+    <p><strong>cat</strong> (abreviatura de concatenate, en inglés) es uno de los comandos más utilizados en Linux. Este
+        lista, combina y escribe el contenido de los archivos en la salida estándar. Para ejecutar este comando, escribe
+        <strong>cat</strong> seguido del nombre del archivo y su extensión. Por ejemplo: </p>
+    <p>Aquí hay otras formas de usar el <a href="/tutoriales/comando-cat-linux" data-wpel-link="internal">comando
+            cat</a>:</p>
+    <ul>
+        <li><strong>cat &gt; nombredearchivo.txt</strong> crea un nuevo archivo.</li>
+        <li><strong>cat nombredearchivo1.txt nombredearchivo2.txt&gt;nombredearchivo3.txt</strong> fusiona
+            <strong>nombrearchivo1.txt</strong> y <strong>nombrearchivo2.txt</strong> y almacena el resultado en
+            <strong>nombrearchivo3.txt</strong>.</li>
+        <li><strong>tac nombrearchivo.txt </strong>muestra el contenido en orden inverso.</li>
+    </ul>
+    <h3 class="wp-block-heading" id="h-6-comando-cp"><span class="ez-toc-section" id="6_Comando_cp"
+            ez-toc-data-id="#6_Comando_cp"></span>5. Comando cp<span class="ez-toc-section-end"></span></h3>
+    <p>Utiliza el comando <strong>cp </strong>para copiar archivos o directorios y su contenido. Echa un vistazo a los
+        siguientes casos de uso.</p>
+    <p>Para copiar un archivo del directorio actual a otro, introduce <strong>cp </strong>seguido del nombre del archivo
+        y del directorio de destino. Por ejemplo:</p>
+    <p><strong>cp nombrearchivo1.txt nombrearchivo2.txt nombrearchivo3.txt /inicio/nombredeusuario/Documentos</strong>
+    </p>
+    <p><strong>cp nombrearchivo1.txt nombrearchivo2.txt nombrearchivo3.txt /inicio/nombredeusuario/Documentos</strong>
+    </p>
+    <h3 class="wp-block-heading" id="h-7-comando-mv"><span class="ez-toc-section" id="7_Comando_mv"
+            ez-toc-data-id="#7_Comando_mv"></span>6. Comando mv<span class="ez-toc-section-end"></span></h3>
+    <p>El uso principal del <a href="/tutoriales/renombrar-archivos-linux" data-wpel-link="internal">comando mv</a> es
+        mover archivos, aunque también se puede usar para cambiar el nombre de los archivos. Además, no produce ninguna
+        salida al ejecutarlo.</p>
+    <p>Simplemente escribe <strong>mv </strong>seguido del nombre del archivo y el directorio de destino. Por ejemplo,
+        si quieres mover <strong>nombredearchivo.txt </strong>al
+        directorio&nbsp;<strong>/inicio/nombredeusuario/Documentos</strong>:</p>
+    <p><strong>mv nombre_archivo_antiguo.txt nombre_archivo_nuevo.txt</strong></p>
+    <h3 class="wp-block-heading" id="h-8-comando-mkdir"><span class="ez-toc-section" id="8_Comando_mkdir"
+            ez-toc-data-id="#8_Comando_mkdir"></span>7. Comando mkdir<span class="ez-toc-section-end"></span></h3>
+    <p>Utiliza el comando <strong>mkdir </strong>para crear uno o varios directorios a la vez y establecer los permisos
+        para cada uno de ellos. El usuario que ejecuta este comando debe tener el privilegio de crear una nueva carpeta
+        en el directorio principal o puede recibir un error de permiso denegado.</p>
+    <p>Esta es la sintaxis básica:</p>
+    <p>El comando <strong>mkdir </strong>acepta muchas opciones, como:</p>
+    <ul>
+        <li><strong>-p </strong>o <strong>-parents </strong>crean un directorio entre dos carpetas existentes. Por
+            ejemplo, <strong>mkdir -p Musica/2020/Canciones </strong>creará el nuevo directorio «2020».</li>
+        <li><strong>-m </strong>establece los permisos del archivo. Por ejemplo, para crear un directorio con todos los
+            permisos de lectura, escritura y ejecución para todos los usuarios, introduce <strong>mkdir -m777
+                nombre_directorio</strong>.</li>
+        <li><strong>-v </strong>imprime un mensaje para cada directorio creado.</li>
+    </ul>
+    <h3 class="wp-block-heading" id="h-10-comando-rm"><span class="ez-toc-section" id="10_Comando_rm"
+            ez-toc-data-id="#10_Comando_rm"></span>8. Comando rm<span class="ez-toc-section-end"></span></h3>
+    <p>El comando <strong>rm </strong>se utiliza para borrar archivos dentro de un directorio. Asegúrate de que el
+        usuario que ejecuta este comando tiene permisos de escritura.</p>
+    <p>Aquí tienes algunas opciones aceptables que puedes añadir:</p>
+    <ul>
+        <li><strong>-i </strong>pide confirmación al sistema antes de borrar un archivo.</li>
+        <li><strong>-f </strong>permite al sistema eliminar sin confirmación.</li>
+        <li><strong>-r </strong>borra archivos y directorios de forma recursiva.</li>
+    </ul>
+    <h3 class="wp-block-heading" id="h-11-comando-touch"><span class="ez-toc-section" id="11_Comando_touch"
+            ez-toc-data-id="#11_Comando_touch"></span>9. Comando touch<span class="ez-toc-section-end"></span></h3>
+    <p>El <a href="/tutoriales/usar-comando-touch-linux-ejemplos" data-wpel-link="internal">comando touch</a> permite
+        crear un archivo vacío o generar y modificar una marca de tiempo en la línea de comandos de Linux.</p>
+    <p>Por ejemplo, introduce el siguiente comando para crear un archivo HTML llamado <strong>Web </strong>en el
+        directorio <strong>Documentos</strong>:</p>
+    <strong>touch /inicio/nombredeusuario/Documentos/Web.html</strong>
+    <h3 class="wp-block-heading"><span class="ez-toc-section" id="9_Comando_rmdir"
+            ez-toc-data-id="#9_Comando_rmdir"></span>10. Comando rmdir<span class="ez-toc-section-end"></span></h3>
+    <p>Para eliminar permanentemente un directorio vacío, utiliza el <a
+            href="/tutoriales/borrar-archivos-carpetas-linux" data-wpel-link="internal">comando rmdir</a>. Recuerda que
+        el usuario que ejecuta este comando debe tener privilegios <strong>sudo </strong>en el directorio padre.</p>
+    <p>Por ejemplo, si deseas eliminar un subdirectorio vacío llamado <strong>personal1 </strong>y su carpeta principal
+        <strong>mydir</strong>:</p>
+    <p><strong>rmdir -p mydir/personal1</strong></p>
+    
+        <h3>Utilice la siguiente pagina</h3>
+        <a href="https://www.ionos.es/digitalguide/servidores/know-how/sistemas-de-archivos/">Pagina usada</a>
+    
+    <h3>Utilice esa pagina para agarrar la informacion necesaria con su inpector y agarrando lo necesario</h3>
+
+</body>
+
+</html>
