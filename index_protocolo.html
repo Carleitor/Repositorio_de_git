@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5_comandos_del_protocolo_FTP</title>
+    <style>
+        table {
+            border: black solid 2px;
+            
+        }
+       
+        td {
+            border: black solid 1px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Comandos  esenciales</h1>
+    <table summary="" datatable="1" border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><colgroup><col width="29%"><col width="70%"></colgroup><tbody><tr><th scope="col" class="columncaption" align="left" valign="top"><div class="headerpadding">Comando</div></th>
+        <th scope="col" class="columncaption" align="left" valign="top"><div class="headerpadding">Descripción</div></th>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>ftp</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Accede al intérprete de comandos <tt>ftp</tt>.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>ftp</tt> <var>sistema remoto</var></div></td>
+        <td align="left" valign="top"><div class="pad5x10">Establece una conexión <tt>ftp</tt> a
+        un sistema remoto. Para obtener instrucciones, consulte <a href="#remotehowtoaccess-40629">Cómo abrir una conexión <tt>ftp</tt> a un sistema remoto</a>.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>open</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Inicia sesión en el
+        sistema remoto desde el intérprete de comandos.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>close</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Cierra la sesión del sistema
+        remoto y vuelve al intérprete de comandos.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>bye</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Sale del intérprete de comandos
+        <tt>ftp</tt>.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>help</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Muestra todos los comandos <tt>ftp</tt> o, si se proporciona un nombre
+        de comando, se describe brevemente lo que hace el comando.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>reset</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Vuelve a
+        sincronizar la secuenciación de respuesta de comando con el servidor <tt>ftp</tt> remoto.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>ls</tt>
+        </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Muestra los contenidos del directorio de trabajo remoto.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>pwd</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Muestra el nombre del
+        directorio de trabajo remoto.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>cd</tt></div></td>
+        <td align="left" valign="top"><div class="pad5x10">Cambia el directorio de trabajo remoto.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>lcd</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Cambia el directorio
+        de trabajo local.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>mkdir</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Crea un directorio en el sistema remoto.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>rmdir</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Elimina un
+        directorio en el sistema remoto.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>get, mget</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Copia un archivo (o varios archivos) del
+        directorio de trabajo remoto al directorio de trabajo local.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><tt>put, mput</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Copia un archivo
+        (o varios archivos) del directorio de trabajo local al directorio de trabajo
+        remoto.</div></td>
+        </tr>
+        
+        <tr class="yellow2">
+        <td scope="row" align="left" valign="top"><div class="pad5x10"><>delete, mdelete</tt> </div></td>
+        <td align="left" valign="top"><div class="pad5x10">Elimina un archivo (o varios archivos) del directorio de trabajo remoto.</div></td>
+        </tr>
+        </tbody></table>
+        <h3>Utilice la siguiente pagina</h3>
+        <a href="https://docs.oracle.com/cd/E24842_01/html/E22524/remotehowtoaccess-14.html">Pagina usada</a>
+        <h3>Fui buscando informacion en esa web y mediante el inspector y seleccionar lo necesario fui creandola</h3>
+</body>
+</html>
