@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_comandos_de_CMD</title>
+    <style>
+      
+
+       th {
+        border: black solid 1px;
+
+       }
+
+       
+        td {
+            border: black solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>Comandos CMD (MS-DOS) en Windows</h1>
+        <aside>
+            <div class="addthis_sharing_toolbox"></div>
+        </aside>
+        <p>Los comandos mostrados en la tabla siguiente pueden ser ejecutados en el <strong>intérprete de comandos de
+                <em>Windows</em></strong>. De cada uno de ellos se indica su <em>funcionalidad</em>. Ahora bien, hay que
+            tener en cuenta que no todos los comandos se pueden ejecutar en todas las versiones de <em>Microsoft
+                Windows</em> (<em>Windows XP</em>, <em>Windows 7</em>, <em>Windows 10</em>, <em>Windows Server
+                2008</em>, <em>Windows Server 2012</em>...).</p>
+        <table>
+            <caption>Lista de comandos CMD en Windows (MS-DOS)</caption>
+            <thead>
+                <tr>
+                    <th>Comando</th>
+                    <th>Funcionalidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ASSOC *</td>
+                    <td>Muestra o modifica las asociaciones de las extensiones de archivos.</td>
+                </tr>
+                <tr>
+                    <td>AT</td>
+                    <td>Planifica comandos y programas para ejecutarse en un equipo. Está en desuso, en su lugar se
+                        recomienda utilizar <strong>schtask.exe</strong>.</td>
+                </tr>
+                <tr>
+                    <td>ATTRIB</td>
+                    <td>Muestra o cambia los atributos del archivo.</td>
+                </tr>
+                <tr>
+                    <td>BREAK *</td>
+                    <td>Establece o elimina la comprobación extendida de <em>Ctrl+C</em> en los sistemas
+                        <em>MS-DOS</em>. Este comando ya no está en uso. Se incluye para preservar la compatibilidad con
+                        archivos de <em>MS-DOS</em> ya existentes, pero no tiene ningún efecto en la línea de comandos
+                        porque la funcionalidad es automática.</td>
+                </tr>
+                <tr>
+                    <td>CALCS</td>
+                    <td>Muestra o modifica las listas de control de acceso (ACLs) de archivos.</td>
+                </tr>
+                <tr>
+                    <td>CALL *</td>
+                    <td>Llama a un programa por lotes desde otro.</td>
+                </tr>
+                <tr>
+                    <td><a href="comando-cd.php"><span class="codenl">CD</span></a> *</td>
+                    <td>Muestra el nombre del directorio actual o cambia a otro directorio.</td>
+                </tr>
+                <tr>
+                    <td>CHCP</td>
+                    <td>Muestra o establece el número de página de códigos activa.</td>
+                </tr>
+                <tr>
+                    <td><a href="comando-chdir.php"><span class="codenl">CHDIR</span></a> *</td>
+                    <td>Muestra el nombre del directorio actual o cambia a otro directorio.</td>
+                </tr>
+                <tr>
+                    <td>CHKDSK</td>
+                    <td>Comprueba un disco y muestra un informe de su estado.</td>
+                </tr>
+                <tr>
+                    <td>CHKNTFS</td>
+                    <td>Muestra o modifica la comprobación de disco al iniciar (arrancar).</td>
+                </tr>
+                <tr>
+                    <td><a href="comando-cls.php"><span class="codenl">CLS</span></a> *</td>
+                    <td>Borra la pantalla.</td>
+                </tr>
+                <tr>
+                    <td>CMD</td>
+                    <td>Inicia una nueva instancia del intérprete de comandos de Windows.</td>
+                </tr>
+                <tr>
+                    <td><a href="comando-color.php"><span class="codenl">COLOR</span></a> *</td>
+                    <td>Establece los colores del primer plano y fondo predeterminados de la consola.</td>
+                </tr>
+                <tr>
+                    <td>COMP</td>
+                    <td>Compara el contenido de dos archivos o un conjunto de archivos.</td>
+                </tr>
+                <tr>
+                    <td>COMPACT</td>
+                    <td>Muestra o cambia el estado de compresión de archivos en particiones NTFS.</td>
+                </tr>
+                <tr>
+                    <td>CONVERT</td>
+                    <td>Convierte volúmenes FAT a volúmenes NTFS. No puede convertir la unidad actual.</td>
+                </tr>
+                <tr>
+                    <td><a href="comando-copy.php"><span class="codenl">COPY</span></a> *</td>
+                    <td>Copia uno o más archivos a otro lugar (en otra ubicación).</td>
+                </tr>
+                <tr>
+                    <td><a href="comando-date.php"><span class="codenl">DATE</span></a> *</td>
+                    <td>Muestra o establece la fecha.</td>
+                </tr>
+                <tr>
+                    <td>DEL *</td>
+                    <td>Elimina uno o más archivos.</td>
+                </tr>
+                <tr>
+                    <td>DIR *</td>
+                    <td>Muestra una lista de archivos y subdirectorios en un directorio.</td>
+                </tr>
+                <tr>
+                    <td>DISKPART</td>
+                    <td>Muestra o configura las propiedades de partición de disco.</td>
+                </tr>
+                <tr>
+                    <td>DISKCOMP</td>
+                    <td>Compara el contenido de dos disquetes.</td>
+                </tr>
+                <tr>
+                    <td>DOSKEY</td>
+                    <td>Edita líneas de comando, recupera comandos de Windows y crea macros.</td>
+                </tr>
+           
+            </tbody>
+        </table>
+        <h2>Ejemplos de uso de comandos CMD</h2>
+        <p>Véase en la siguiente imagen la ejecución de algunos comandos:</p>
+        <img src="images/ejemplos-de-comandos-cmd.gif" width="444" height="295"
+            alt="Ejemplos de uso de comandos CMD en Windows">
+        <p>(*) Con un asterisco se han marcado los comandos internos de <strong>cmd.exe</strong>. En cuanto a los
+            comandos externos, lo normal es que estén ubicados en el directorio <em>C:\WINDOWS\System32</em>. Por
+            ejemplo: <strong><em>help.exe</em></strong>, <strong><em>tree.exe</em></strong>,
+            <strong><em>xcopy.exe</em></strong>...</p>
+    </article>
+    <h3>Utilice la siguiente pagina</h3>
+    <a href="https://www.abrirllave.com/cmd/comandos.php">Pagina usada</a>
+    <h3>Utilize esa pagina para agarrar la informacion necesaria mediante el inspector y la pagina</h3>
+</body>
+
+</html>
